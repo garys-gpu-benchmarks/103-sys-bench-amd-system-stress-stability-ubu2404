@@ -11,16 +11,16 @@ Reference results from the validation run on the system shown in each section (r
 ## smoke
 
 - **System:** 1× AMD Instinct MI300X VF (196288 MB) · INTEL(R) XEON(R) PLATINUM 8568Y+ · Ubuntu 24.04.5 LTS · kernel 6.8.0-149-generic · driver 7.1.9.31600000
-- **Run:** 2026-11-22T10:45:30Z · status **N/A-EXPECTED** (exit 0)
-- **Time (mm:ss):** setup 03:46 · benchmark 00:14 · whole run 04:10
-- **Source:** run 103_20261122_104530
+- **Run:** 2026-11-22T14:08:24Z · status **N/A-EXPECTED** (exit 0)
+- **Time (mm:ss):** setup 05:08 · benchmark 00:14 · whole run 05:31
+- **Source:** run 103_20261122_140824
 - **Command:** `bash run_benchmark.sh --smoke --num-threads 16 --cpu-load-percent 50 --gpu-load-percent 50 --temp-threshold 100 --power-threshold 1000 --duration 5 --poll-interval 1`
 - **GPU load:** the AMD rocblas-bench hot loop runs at full utilization, not the requested `--gpu-load-percent`. Requested 50%, delivered ~100%.
 
 | # | Metric | Result |
 |---|---|---|
-| 1 | Peak GPU junction temperature (peak_gpu_junction_temp_c) | 63.0 |
-| 2 | Sustained GPU power (sustained_gpu_power_w) | 750.25 |
+| 1 | Peak GPU junction temperature (peak_gpu_junction_temp_c) | 62.0 |
+| 2 | Sustained GPU power (sustained_gpu_power_w) | 750.75 |
 | 3 | Uncorrectable ECC errors, RAS counter delta (ras_uncorrectable_ecc_delta_count) | 0.0 |
 | 4 | Thermal throttle events (thermal_throttle_event_count) | na (expected: throttle counter not exposed) |
 <!-- /profile:smoke -->
